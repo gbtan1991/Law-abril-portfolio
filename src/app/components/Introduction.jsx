@@ -5,7 +5,8 @@ import partnership from "../../../public/partnership.png";
 
 const Introduction = () => {
   return (
-    <div className='flex items-center'>
+    <div className=''>
+      <div className='max-w-[75rem] m-auto flex items-center'>
         <div className='w-[60%] flex-col flex gap-7'>
           <div className='flex gap-3 items-center'>
             <p className='bg-gray-800 text-white py-1 px-7 rounded-full'>
@@ -43,6 +44,8 @@ const Introduction = () => {
          
         </div>
     </div>
+    </div>
+    
   )
 }
 

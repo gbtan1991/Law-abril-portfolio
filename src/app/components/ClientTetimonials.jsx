@@ -4,9 +4,10 @@ import testimonialsImg from "../../../public/testimonials-image.png";
 
 const ClientTetimonials = () => {
   return (
-    <div className='py-20'>
-      <h1 className='text-center text-5xl font-bold text-gray-900 mb-5'>Clients Testimonial</h1>
-      <div className='flex justify-between gap-5'>
+    <div className='max-w-[75rem] m-auto'>
+      <div className='py-20'>
+        <h1 className='text-center text-5xl font-bold text-gray-900 mb-5'>Clients Testimonial</h1>
+        <div className='flex justify-between gap-5'>
           <div className='flex flex-col justify-center w-[50%] items-center gap-10'>
             <div className='bg-white flex flex-col shadow-chatbox rounded-lg px-3 py-5 text-center h-[12rem] justify-center relative 
                             before:w-10 before:h-10 before:absolute before:-bottom-3 before:left-1/2 before:transform before:-translate-x-1/2 before:rotate-45 before:bg-white shadow-chatbox-before'>
@@ -35,11 +36,11 @@ const ClientTetimonials = () => {
                 </div>
             </div>
           </div>
-      </div>
-      <div>
-        
+        </div>
+      <div> 
       </div>
     </div>
+  </div>  
   )
 }
 
