@@ -89,7 +89,8 @@ const socialIcons = [
 
 const Footer = () => {
     return (
-      <div className='bg-[#333333] py-5'>
+    <div className='bg-[#333333]'>
+        <div className='max-w-[75rem] m-auto py-5'>
           <div className='py-20 flex justify-between px-5 items-center'>
               <div className='w-[50%]'>
                   <Image className='w-[20rem]' alt='abril footer' src={abrilfooterlogo}/>
@@ -138,6 +139,8 @@ const Footer = () => {
             </ul>
           </div>
       </div>
+    </div>
+      
     )
   }
   

@@ -29,21 +29,24 @@ const data = [{
 
 const Introduction2 = () => {
   return (
-    <div className='bg-[#EEEEEE] flex gap-5 justify-between py-12 px-10 pb-32'>
-        <div className='flex flex-col gap-5 w-[45%] p-5'>
-            <h1 className='text-5xl text-gray-900 leading-normal'>Why do we help with legalization?</h1>
-            <p className='text-gray-500 text-lg leading-normal'>We are here for UMKM in Indonesia to carry out the legalization process, which is sometimes complicated.</p>
-        </div>
-        <div className='flex flex-wrap justify-between w-[55%] gap-3'>
-            {data.map((items) => (
-                <div className='flex flex-col gap-5 w-[45%] bg-white py-3 px-5 rounded-lg'>
-                    <Image alt='' src={items.icon}/>
-                    <h1 className='font-semibold'>{items.title}</h1>
-                    <p className='text-sm text-gray-400'>{items.description}</p>
-                </div>
-            ))}
+    <div className='bg-[#EEEEEE]'>
+        <div className='max-w-[75rem] m-auto  flex gap-5 justify-between py-12 px-10 pb-32'>
+            <div className='flex flex-col gap-5 w-[45%] p-5'>
+                <h1 className='text-5xl text-gray-900 leading-normal'>Why do we help with legalization?</h1>
+                <p className='text-gray-500 text-lg leading-normal'>We are here for UMKM in Indonesia to carry out the legalization process, which is sometimes complicated.</p>
+            </div>
+            <div className='flex flex-wrap justify-between w-[55%] gap-3'>
+                {data.map((items) => (
+                    <div className='flex flex-col gap-5 w-[45%] bg-white py-3 px-5 rounded-lg'>
+                        <Image alt='' src={items.icon}/>
+                        <h1 className='font-semibold'>{items.title}</h1>
+                        <p className='text-sm text-gray-400'>{items.description}</p>
+                    </div>
+                ))}
+            </div>
         </div>
     </div>
+    
   )
 }
 
