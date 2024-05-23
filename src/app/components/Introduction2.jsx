@@ -36,8 +36,8 @@ const Introduction2 = () => {
                 <p className='text-gray-500 text-lg leading-normal'>We are here for UMKM in Indonesia to carry out the legalization process, which is sometimes complicated.</p>
             </div>
             <div className='flex flex-wrap justify-between w-[55%] gap-3'>
-                {data.map((items) => (
-                    <div className='flex flex-col gap-5 w-[45%] bg-white py-3 px-5 rounded-lg'>
+                {data.map((items, index) => (
+                    <div key={index} className='flex flex-col gap-5 w-[45%] bg-white py-3 px-5 rounded-lg'>
                         <Image alt='' src={items.icon}/>
                         <h1 className='font-semibold'>{items.title}</h1>
                         <p className='text-sm text-gray-400'>{items.description}</p>

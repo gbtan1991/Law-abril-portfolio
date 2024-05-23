@@ -19,8 +19,8 @@ const Achievement = () => {
             <p className='text-lg'>Our achievement in the journey depicted in numbers</p>
         </div>
         <div className='flex gap-5 w-[500px] justify-between'>
-            {data.map((items) => (
-                <div className='flex flex-col text-center text-white gap-3'>
+            {data.map((items, index) => (
+                <div key={index} className='flex flex-col text-center text-white gap-3'>
                     <h2 className='text-5xl font-bold'>{items.title}</h2>
                     <p>{items.description}</p>
                 </div>
