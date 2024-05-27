@@ -39,7 +39,7 @@ const Introduction2 = () => {
                 {data.map((items, index) => (
                     <div key={index} className='flex flex-col gap-5  w-[45%] max-sm:w-full bg-white py-3 px-5 rounded-lg card-shadow '>
                         <Image alt='' src={items.icon}/>
-                        <h1 className='font-semibold'>{items.title}</h1>
+                        <h1 className='font-semibold text-gray-800'>{items.title}</h1>
                         <p className='text-sm text-gray-400'>{items.description}</p>
                     </div>
                 ))}
