@@ -67,8 +67,8 @@ const Header = () => {
             }
             
             <Nav isMenuOpen={isMenuOpen} isSmallDevice={isSmallDevice}/>
-            <div className={clsx('flex items-center gap-3', {
-              "bg-white p-2 rounded-full w-full": isMenuOpen && isSmallDevice
+            <div className={clsx('flex items-center gap-5', {
+              "bg-white p-2 rounded-full w-full mt-5": isMenuOpen && isSmallDevice
             })}>
               <IoIosSearch className='cursor-pointer' size={25}/>
               <input type="text" className='border-none outline-none' placeholder='Search'/>
@@ -81,7 +81,7 @@ const Header = () => {
           {isSmallDevice && (
             <div className='cursor-pointer z-10'>
               {isMenuOpen ? (
-                <AiOutlineClose size={25} onClick={handleMenuOpen} className='text-white fixed right-10'/>
+                <AiOutlineClose size={25} onClick={handleMenuOpen} className='text-white fixed right-10 top-10'/>
               ) : (
                 <AiOutlineMenu size={25} onClick={handleMenuOpen} />
               )}
