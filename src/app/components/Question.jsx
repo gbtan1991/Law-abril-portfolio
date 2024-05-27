@@ -11,7 +11,7 @@ const Question = () => {
                   <h1 className='text-5xl font-bold text-gray-900'>Complex Questions?</h1>
                   <p className='text-gray-500 text-xl'>Request for a personalized budget for your legal problem. We will send you a coupe options in 24 hours. You can have free consult , if a our first customer</p>
             
-                  <button className='flex gap-3 py-3 px-8 max-md:px-10 bg-[#333333] items-center rounded-lg'>
+                  <button className='flex gap-3 py-3 px-8 max-sm:w-full max-sm:justify-center bg-[#333333] items-center rounded-lg'>
                       <Image alt='call icon' src={callIcon}/>
                       <p className='text-white text-xl font-semibold'>Call now</p>
                   </button>
