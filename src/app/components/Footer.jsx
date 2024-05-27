@@ -91,36 +91,36 @@ const Footer = () => {
     return (
     <div className='bg-[#333333]'>
         <div className='max-w-[75rem] m-auto py-5'>
-          <div className='py-20 flex justify-between px-5 items-center'>
-              <div className='w-[50%]'>
-                  <Image className='w-[20rem]' alt='abril footer' src={abrilfooterlogo}/>
+          <div className='py-20 flex justify-between px-5 items-center max-md:flex-col'>
+              <div className='w-[50%] max-md:w-full'>
+                  <Image className='w-[20rem] max-md:w-full' alt='abril footer' src={abrilfooterlogo}/>
               </div>
-              <div className='flex gap-5 text-white w-[50%] justify-between'>
+              <div className='flex gap-5 text-white w-[50%] max-md:w-full max-md:flex-col  justify-between max-md:gap-10'>
                   <div className='flex flex-col gap-5'>
-                      <h3>{footerLinks.product.title}</h3>
+                      <h3 className='max-md:text-2xl'>{footerLinks.product.title}</h3>
                       <ul className='flex flex-col gap-2'>
                           {footerLinks.product.productItems.map((item, index) => (
-                              <li key={`product-${index}`}>
+                              <li className='max-md:text-xl' key={`product-${index}`}>
                                   <Link href={item.url} >{item.title}</Link>
                               </li>
                           ))}
                       </ul>
                   </div>
                   <div className='flex flex-col gap-5'>
-                      <h3>{footerLinks.company.title}</h3>
+                      <h3 className='max-md:text-2xl'>{footerLinks.company.title}</h3>
                       <ul className='flex flex-col gap-2'>
                           {footerLinks.company.companyItems.map((item, index) => (
-                              <li key={`company-${index}`}>
+                              <li className='max-md:text-xl' key={`company-${index}`}>
                                   <Link href={item.url} >{item.title}</Link>
                               </li>
                           ))}
                       </ul>
                   </div>
                   <div className='flex flex-col gap-5'>
-                      <h3>{footerLinks.support.title}</h3>
+                      <h3 className='max-md:text-2xl'>{footerLinks.support.title}</h3>
                       <ul className='flex flex-col gap-2'>
                           {footerLinks.support.supportItems.map((item, index) => (
-                              <li key={`support-${index}`}>
+                              <li className='max-md:text-xl' key={`support-${index}`}>
                                   <Link href={item.url} >{item.title}</Link>
                               </li>
                           ))}
@@ -128,7 +128,7 @@ const Footer = () => {
                   </div>
               </div>
           </div>
-          <div className='text-white flex justify-between items-center px-5'>
+          <div className='text-white flex justify-between items-center px-5 max-md:flex-col-reverse max-md:gap-5'>
             <p>© 2024 Abril Law Office. All rights reserved</p>
             <ul className='flex gap-5 items-center'>
                 {socialIcons.map((social, index) => (

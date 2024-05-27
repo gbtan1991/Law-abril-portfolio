@@ -30,14 +30,14 @@ const data = [{
 const Introduction2 = () => {
   return (
     <div className='bg-[#EEEEEE]'>
-        <div className='max-w-[75rem] m-auto  flex gap-5 justify-between py-12 px-10 pb-32'>
-            <div className='flex flex-col gap-5 w-[45%] p-5'>
+        <div className='max-w-[75rem] m-auto  flex gap-5 justify-between py-12 px-10 max-sm:px-5 pb-32 max-lg:flex-col'>
+            <div className='flex flex-col gap-5 w-[45%] max-lg:w-full p-5 max-sm:text-center'>
                 <h1 className='text-5xl text-gray-900 leading-normal'>Why do we help with legalization?</h1>
                 <p className='text-gray-500 text-lg leading-normal'>We are here for UMKM in Indonesia to carry out the legalization process, which is sometimes complicated.</p>
             </div>
-            <div className='flex flex-wrap justify-between w-[55%] gap-3'>
+            <div className='flex flex-wrap justify-between w-[55%] max-lg:w-full gap-3'>
                 {data.map((items, index) => (
-                    <div key={index} className='flex flex-col gap-5 w-[45%] bg-white py-3 px-5 rounded-lg'>
+                    <div key={index} className='flex flex-col gap-5  w-[45%] max-sm:w-full bg-white py-3 px-5 rounded-lg card-shadow '>
                         <Image alt='' src={items.icon}/>
                         <h1 className='font-semibold'>{items.title}</h1>
                         <p className='text-sm text-gray-400'>{items.description}</p>

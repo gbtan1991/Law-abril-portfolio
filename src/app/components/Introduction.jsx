@@ -6,8 +6,8 @@ import partnership from "../../../public/partnership.png";
 const Introduction = () => {
   return (
     <div className=''>
-      <div className='max-w-[75rem] m-auto flex items-center'>
-        <div className='w-[60%] flex-col flex gap-7'>
+      <div className='max-w-[75rem] max-lg:px-10 max-lg:flex-col m-auto flex items-center max-sm:text-center'>
+        <div className='w-[60%] max-lg:w-full flex-col flex gap-7 max-sm:items-center'>
           <div className='flex gap-3 items-center'>
             <p className='bg-gray-800 text-white py-1 px-7 rounded-full'>
               New
@@ -15,23 +15,24 @@ const Introduction = () => {
             <p className='text-gray-950'>Stay connected to upcomming & Recent jobs</p>
           </div>
           <div className='flex flex-col gap-10'>
-            <h1 className='text-7xl font-bold'>Your Solution <br/> Legal Consultacy</h1>
+            <h1 className='text-7xl font-bold max-sm:text-5xl'>Your Solution <br/> Legal Consultacy</h1>
             <p className='text-gray-800 text-xl'>
               We are here to help you take care of your legality <br /> with the best service especially for you.
             </p>
-            <div className='flex w-full justify-start'>
+            <div className='flex w-full justify-start max-sm:justify-center'>
               <button className='bg-gray-800 text-white p-5 rounded-md uppercase'>Get started</button>
             </div>
-            <p className='text-xl text-gray-400 pb-5'>Trusted by 10+ companies in Philippines</p>
-            <Image className='w-40' alt='partnership' src={partnership}/>
+            <p className='text-xl text-gray-400 pb-5 max-sm:hidden'>Trusted by 10+ companies in Philippines</p>
+            <Image className='w-40 max-sm:hidden' alt='partnership' src={partnership}/>
           </div>
         </div>
-        <div className='w-[40%]'>
-            <div className='flex flex-col h-full relative w-full 
-              before:bg-gray-300 before:w-[650px] before:h-[650px] before:-z-10 before:rounded-full before:opacity-50 before:absolute before:-top-7 before:-left-10
-              after:bg-gray-400 after:w-[500px] after:h-[500px] after:-z-10 after:rounded-full after:opacity-30 after:absolute after:!-top-5 after:left-10'
+        <div className='w-[40%] max-lg:w-[60%] max-md:w-[80%] max-sm:w-full flex flex-col justify-center relative px-5 max-sm:p-0'>
+            <div className='flex flex-col h-full absolute w-full justify-center max-sm:justify-start items-center 
+              before:w-[100%] before:max-sm:w-[110%] before:h-[65%] before:max-sm:h-[75%] before:bg-gray-300 before:rounded-full before:opacity-50 before:-z-10
+              after:absolute after:top-[18%] after:max-sm:top-0 after:w-[80%] after:max-sm:w-[90%] after:h-[55%] after:max-sm:h-[65%] after:bg-gray-300 after:rounded-full after:opacity-50 after:-z-10'
             >
-              <Image alt='atty profile' src={attyProfile}/>
+            </div>
+            <Image alt='atty profile' src={attyProfile} className='max-h-[700px] max-w-[700px] w-full'/>
               <div className='flex flex-col justify-center text-center py-5'>
                 <h1 className='font-bold text-xl'>
                   Francis Dominick P. Abril
@@ -40,8 +41,6 @@ const Introduction = () => {
                   -Lawyer
                 </p>
               </div>
-            </div>
-         
         </div>
     </div>
     </div>
