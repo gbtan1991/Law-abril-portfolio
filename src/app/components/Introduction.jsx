@@ -12,11 +12,11 @@ const Introduction = () => {
             <p className='bg-gray-800 text-white py-1 px-7 rounded-full'>
               New
             </p>
-            <p className='text-gray-950'>Stay connected to upcomming & Recent jobs</p>
+            <p className='text-gray-900'>Stay connected to upcomming & Recent jobs</p>
           </div>
           <div className='flex flex-col gap-10'>
-            <h1 className='text-7xl font-bold max-sm:text-5xl'>Your Solution <br/> Legal Consultacy</h1>
-            <p className='text-gray-800 text-xl'>
+            <h1 className='text-6xl font-bold max-sm:text-5xl text-gray-900'>Your Solution <br/> Legal Consultacy</h1>
+            <p className='text-gray-600 text-xl'>
               We are here to help you take care of your legality <br /> with the best service especially for you.
             </p>
             <div className='flex w-full justify-start max-sm:justify-center'>

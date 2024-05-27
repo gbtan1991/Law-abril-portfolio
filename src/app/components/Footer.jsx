@@ -71,19 +71,19 @@ const footerLinks = {
 const socialIcons = [
     {
         icon: insta,
-        url: "/"
+        url: "https://www.instagram.com"
     },
     {
         icon: ball,
-        url: "/"
+        url: "https://www.ball.com"
     },
     {
         icon: twitter,
-        url: "/"
+        url: "https://x.com"
     },
     {
         icon: youtube,
-        url: "/"
+        url: "https://www.youtube.com"
     }
 ]
 
