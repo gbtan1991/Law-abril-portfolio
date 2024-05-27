@@ -16,3 +16,7 @@
     content: ''; /* Required for pseudo-elements */
     box-shadow: 6px 6px 6px 0px rgba(200 213 235 / 50%);
 }
+
+.card-shadow {
+    box-shadow: 1px 3px 1px 1px hsl(0, 0%, 87%);
+}
