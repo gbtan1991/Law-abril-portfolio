@@ -1,5 +1,5 @@
 "use client"
-import Container from "./components/container";
+import Container from "./components/Container.jsx";
 
 export default function Home() {
   return (
